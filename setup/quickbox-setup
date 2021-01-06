@@ -51,7 +51,6 @@ function _intro() {
   echo
   echo
   echo "${green}Checking distribution ...${normal}"
-  fi
   echo "$(lsb_release -a)"
   echo
   if [[ ! "$DISTRO" =~ ("Ubuntu"|"Debian") ]]; then
