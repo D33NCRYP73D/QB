@@ -51,10 +51,6 @@ function _intro() {
   echo
   echo
   echo "${green}Checking distribution ...${normal}"
-  if [ ! -x  /usr/bin/lsb_release ]; then
-    echo "It looks like you are running $DISTRO, which is not supported by QuickBox."
-    echo "Exiting..."
-    exit 1
   fi
   echo "$(lsb_release -a)"
   echo
